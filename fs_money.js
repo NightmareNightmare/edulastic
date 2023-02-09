@@ -26,7 +26,7 @@ Element.prototype.addEventListener = function(type, listener, options) {
     
   else {
     this._addEventListener(type, listener, options);
-    console.log("edulastic-tools: allowed event "+type);  
+    console.log("NightmareNightmare: Allowed event: "+type);  
   }
 };
 
@@ -36,7 +36,7 @@ function payload() {
   window._addEventListener = Element.prototype._addEventListener;
   document.addEventListener = Element.prototype.addEventListener;
   document._addEventListener = Element.prototype._addEventListener;
-  console.log("edulastic-tools: overwritten addEventListener");  
+  console.log("NightmareNightmare: Overwritten a new addEventListener");  
 
   //indicator that script has been successful
   document.oldTitle = document.title;
